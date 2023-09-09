@@ -20,7 +20,8 @@ import constants
 os.environ["OPENAI_API_KEY"] = st.secrets["db_credentials"]["KEY"]
 
 # Enable to save to disk & reuse the model (for repeated queries on the same data)
-PERSIST = False
+PERSIST = True
+
 
 query = None
 if len(sys.argv) > 1:
