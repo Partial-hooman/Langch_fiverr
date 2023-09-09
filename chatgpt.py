@@ -60,7 +60,9 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 for message in st.session_state.messages:
-    with st.chat_message(message[0]):
+    with st.chat_message("user"):
+        st.markdown(message[0])
+    with st.chat_message("assistant"):
         st.markdown(message[1])
 
 if prompt := st.chat_input("enter your query:"):
