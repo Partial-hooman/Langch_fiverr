@@ -65,7 +65,8 @@ for message in st.session_state.messages:
 if prompt := st.chat_input("enter your query:"):
     #st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
-        st.markdown(prompt)
+        prompt_placeholder = st.empty()
+        prompt_placeholder.markdown(prompt)
 
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
