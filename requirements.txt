@@ -1,0 +1,9 @@
+streamlit
+openai
+langchain
+streamlit-chat
+unstructured
+unstructured[pdf]
+chromadb 
+tiktoken
+pysqlite3-binary
